@@ -1,0 +1,3 @@
+msvcrt.dll:0xdeaf5e41
+KERNELBASE.dll:0xdeaee13b
+KERNEL32.DLL:0xdeaeaefb

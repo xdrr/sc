@@ -1,0 +1,35 @@
+┌ (fcn) sym._sc 99
+│   sym._sc ();
+│           ; var int local_5ch @ ebp-0x5c
+│           ; var int local_18h @ ebp-0x18
+│           ; var int local_4h @ esp+0x4
+│           ; var int local_8h @ esp+0x8
+│           ; var int local_ch @ esp+0xc
+│           ; var int local_10h @ esp+0x10
+│           ; var int local_14h @ esp+0x14
+│           ; var int local_18h_2 @ esp+0x18
+│           ; var int local_1ch @ esp+0x1c
+│           ; var int local_20h @ esp+0x20
+│           ; var int local_24h @ esp+0x24
+│              ; CALL XREF from 0x004015de (sym._main)
+│           0x00401570      55             push ebp
+│           0x00401571      89e5           mov ebp, esp
+│           0x00401573      81ec98000000   sub esp, 0x98
+│           0x00401579      8d45e8         lea eax, [local_18h]
+│           0x0040157c      89442424       mov dword [local_24h], eax
+│           0x00401580      8d45a4         lea eax, [local_5ch]
+│           0x00401583      89442420       mov dword [local_20h], eax
+│           0x00401587      c744241c0000.  mov dword [local_1ch], 0
+│           0x0040158f      c74424180000.  mov dword [local_18h_2], 0
+│           0x00401597      c74424140000.  mov dword [local_14h], 0
+│           0x0040159f      c74424100000.  mov dword [local_10h], 0
+│           0x004015a7      c744240c0000.  mov dword [local_ch], 0
+│           0x004015af      c74424080000.  mov dword [local_8h], 0
+│           0x004015b7      c74424042440.  mov dword [local_4h], 0x404024 ; [0x404024:4]=0x5c3a6300
+│           0x004015bf      c70424254040.  mov dword [esp], str.c:_windows_system32_calc.exe ; [0x404025:4]=0x775c3a63 ; "c:\\windows\\system32\\calc.exe"
+│           0x004015c6      a108614000     mov eax, dword sym.imp.KERNEL32.dll_CreateProcessA ; [0x406108:4]=0x61d4 reloc.KERNEL32.dll_CreateProcessA_212
+│           0x004015cb      ffd0           call eax
+│           0x004015cd      83ec28         sub esp, 0x28               ; '('
+│           0x004015d0      90             nop
+│           0x004015d1      c9             leave
+└           0x004015d2      c3             ret

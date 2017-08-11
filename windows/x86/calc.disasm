@@ -1,0 +1,46 @@
+┌ (fcn) sym._sc 160
+│   sym._sc ();
+│           ; var int local_5ch @ ebp-0x5c
+│           ; var int local_18h @ ebp-0x18
+│           ; var size_t local_4h @ esp+0x4
+│           ; var int local_8h @ esp+0x8
+│           ; var int local_ch @ esp+0xc
+│           ; var int local_10h @ esp+0x10
+│           ; var int local_14h @ esp+0x14
+│           ; var int local_18h_2 @ esp+0x18
+│           ; var int local_1ch @ esp+0x1c
+│           ; var int local_20h @ esp+0x20
+│           ; var int local_24h @ esp+0x24
+│              ; CALL XREF from 0x0040161b (sym._main)
+│           0x00401570      55             push ebp
+│           0x00401571      89e5           mov ebp, esp
+│           0x00401573      81ec98000000   sub esp, 0x98
+│           0x00401579      c74424084400.  mov dword [local_8h], 0x44  ; 'D' ; [0x44:4]=0xcd09b400 ; 'D'
+│           0x00401581      c74424040000.  mov dword [local_4h], 0     ; size_t n
+│           0x00401589      8d45a4         lea eax, [local_5ch]
+│           0x0040158c      890424         mov dword [esp], eax        ; int c
+│           0x0040158f      e8c0110000     call sym._memset            ; void *memset(void *s, int c, size_t n)
+│           0x00401594      c74424081000.  mov dword [local_8h], 0x10  ; [0x10:4]=184
+│           0x0040159c      c74424040000.  mov dword [local_4h], 0     ; size_t n
+│           0x004015a4      8d45e8         lea eax, [local_18h]
+│           0x004015a7      890424         mov dword [esp], eax        ; int c
+│           0x004015aa      e8a5110000     call sym._memset            ; void *memset(void *s, int c, size_t n)
+│           0x004015af      c745a4440000.  mov dword [local_5ch], 0x44 ; 'D'
+│           0x004015b6      8d45e8         lea eax, [local_18h]
+│           0x004015b9      89442424       mov dword [local_24h], eax
+│           0x004015bd      8d45a4         lea eax, [local_5ch]
+│           0x004015c0      89442420       mov dword [local_20h], eax
+│           0x004015c4      c744241c0000.  mov dword [local_1ch], 0
+│           0x004015cc      c74424180000.  mov dword [local_18h_2], 0
+│           0x004015d4      c74424140000.  mov dword [local_14h], 0
+│           0x004015dc      c74424100000.  mov dword [local_10h], 0
+│           0x004015e4      c744240c0000.  mov dword [local_ch], 0
+│           0x004015ec      c74424080000.  mov dword [local_8h], 0
+│           0x004015f4      c74424040000.  mov dword [local_4h], 0
+│           0x004015fc      c70424244040.  mov dword [esp], str.c:_windows_system32_calc.exe ; [0x404024:4]=0x775c3a63 ; "c:\\windows\\system32\\calc.exe"
+│           0x00401603      a10c614000     mov eax, dword sym.imp.KERNEL32.dll_CreateProcessA ; [0x40610c:4]=0x61dc reloc.KERNEL32.dll_CreateProcessA_220
+│           0x00401608      ffd0           call eax
+│           0x0040160a      83ec28         sub esp, 0x28               ; '('
+│           0x0040160d      90             nop
+│           0x0040160e      c9             leave
+└           0x0040160f      c3             ret
